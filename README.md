@@ -10,8 +10,6 @@ A practical guide to Muapi's abliterated LLM API: 21 model-specific REST endpoin
 
 ## Related Projects
 
-- [Muapi](https://muapi.ai) — one API platform for generative AI models.
-- [Abliterated LLM API catalog](https://muapi.ai/abliterated-llm-api) — live model availability, current rates, and per-model request examples.
 - [Muapi API quick start](https://muapi.ai/docs/quick-start) — account setup and API basics.
 - [awesome-abliterated-llms](https://github.com/Anil-matcha/awesome-abliterated-llms) — a broader, source-aware index of hosted and open-weight abliterated LLMs.
 - [uncensored-coding-models](https://github.com/Anil-matcha/uncensored-coding-models) — coding-agent setup notes and model evaluations.
@@ -30,7 +28,7 @@ The normal request flow is asynchronous:
 
 For token-by-token output, use that model's `/stream` route. The stream returns server-sent events (SSE) directly instead of a prediction ID.
 
-This repository focuses on API onboarding and integration. For a broader index of hosted and open-weight model variants, see [awesome-abliterated-llms](https://github.com/Anil-matcha/awesome-abliterated-llms).
+This repository focuses on API onboarding and integration rather than maintaining a source-tracked catalog of hosted and open-weight model variants.
 
 | Capability | Details |
 |---|---|
@@ -45,7 +43,7 @@ This repository focuses on API onboarding and integration. For a broader index o
 
 ## Quickstart
 
-Create a key at [muapi.ai/access-keys](https://muapi.ai/access-keys), then set it in your shell:
+After creating a Muapi API key, set it in your shell:
 
 ```bash
 export MUAPI_API_KEY="your_muapi_api_key"
@@ -121,7 +119,7 @@ The model-specific routes use `prompt` rather than a `messages` array. For OpenA
 
 ## Pricing
 
-Muapi bills LLM requests by token usage. The catalog below includes a dated snapshot of published input/output rates; live rates and availability can change. Compare rates on the [Muapi model catalog](https://muapi.ai/abliterated-llm-api) before deployment. Prices are not included in this repository's code as constants.
+Muapi bills LLM requests by token usage. The catalog below includes a dated snapshot of published input/output rates; live rates and availability can change. Compare rates on the live model catalog before deployment; its link is at the top of this README. Prices are not included in this repository's code as constants.
 
 ## Use cases
 
