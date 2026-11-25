@@ -85,6 +85,7 @@ Meta says many connector actions can be limited to read-only, important actions 
 | [front](./front/SKILL.md) | Read your Front shared inbox, and reply, assign teammates, and add tags on conversations (writes need --confirm). |
 | [fxmacrodata](./fxmacrodata/SKILL.md) | Macro indicator history, release calendars, and FX spot rates for 22 currencies. Read-only; USD works without a key. |
 | [gemini](./gemini/SKILL.md) | Google Gemini text generation (system instructions, tool use, Maps grounding) plus media generation — Nano Banana and Imagen 4 images, Veo 3.1 video with download, TTS — with cost confirmation enforced in code before any billed call. |
+| [getyoutubetranscript](./getyoutubetranscript/SKILL.md) | YouTube transcripts in any caption language, plus video search, channel and playlist listings. Read-only. |
 | [github](./github/SKILL.md) | View your profile, list repos, list open issues, and create issues. |
 | [gitlab](./gitlab/SKILL.md) | Your GitLab user, projects, open merge requests, and issue creation. |
 | [google-maps](./google-maps/SKILL.md) | Routes with traffic, travel times, and geocoding — with quota caps that keep it inside the free tier. |
