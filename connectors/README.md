@@ -39,15 +39,18 @@ Meta says many connector actions can be limited to read-only, important actions 
 | [asana](./asana/SKILL.md) | View your assigned Asana tasks and create new ones. |
 | [ashby](./ashby/SKILL.md) | Search Ashby public job boards (no key needed) and read/write the Ashby ATS: candidates, jobs, applications. |
 | [attio](./attio/SKILL.md) | Query CRM records, upsert by matching attribute, add notes and tasks. |
+| [bankbridge](./bankbridge/SKILL.md) | Read-only access to your connected bank accounts: balances, transactions, spending summaries, recurring charges, monthly cashflow, and investment holdings. Paid service ($5/mo per bank); demo key available. |
 | [beatoven](./beatoven/SKILL.md) | Beatoven.ai royalty-free music generation: compose tracks, poll tasks, download audio, fetch individual stems. |
 | [beehiiv](./beehiiv/SKILL.md) | List publications, subscribers, and posts; add subscribers. |
 | [black-forest-labs](./black-forest-labs/SKILL.md) | Black Forest Labs FLUX image generation: flux-2-pro and flux-2-flex text-to-image with async polling. |
 | [bluesky](./bluesky/SKILL.md) | Read timelines, search posts, post and follow. |
 | [brave-search](./brave-search/SKILL.md) | Independent web search from Brave |
+| [brewpage](./brewpage/SKILL.md) | Publish an HTML or Markdown file to an expiring BrewPage HTTPS link (unlisted by default, no account), then read, replace or delete it. Writes are confirmed first. |
 | [buttondown](./buttondown/SKILL.md) | Read and write Buttondown: list subscribers and emails, add subscribers, draft emails. |
 | [buzzsprout](./buzzsprout/SKILL.md) | Manage podcast episodes on Buzzsprout: list and fetch episodes, create, update, or delete them, and list embed players. Use when the user wants to publish or manage podcast episodes on a Buzzsprout-hosted show. |
 | [calcom](./calcom/SKILL.md) | List bookings and event types, create bookings. |
 | [calendly](./calendly/SKILL.md) | Read and manage Calendly: list scheduled events, event types, invitees, and availability schedules; cancel bookings. |
+| [call-me](./call-me/SKILL.md) | Ring or text the user's own phone (iPhone or Android) and get their spoken answer back as text. Needs the paid /call-me app; no API key. |
 | [canva](./canva/SKILL.md) | Read and manage Canva designs through the Canva Connect API: list designs and folders, inspect a design, create designs, upload assets, and export designs. Exports are async jobs: submit with export, then poll with export-status until the job succeeds. |
 | [cartesia](./cartesia/SKILL.md) | Generate spoken audio from text with Cartesia |
 | [clerk](./clerk/SKILL.md) | List, create, update, and delete users. |
@@ -56,14 +59,16 @@ Meta says many connector actions can be limited to read-only, important actions 
 | [cloudinary](./cloudinary/SKILL.md) | Manage media on Cloudinary through the Upload and Admin APIs: upload images and videos, list and inspect assets, update metadata and tags, delete assets, and check plan usage (credits, storage, bandwidth, transformations). |
 | [cohesivity](./cohesivity/SKILL.md) | provision on-the-fly backend infrastructure including Postgres, Redis, object storage, hosting, auth, AI APIs. No API keys or account to get started; the agent signs up on its own. |
 | [coda](./coda/SKILL.md) | List docs, read tables and rows, add rows. Your docs as a database. |
-| [datacircle](./datacircle/SKILL.md) | Datacircle is a data co-op. Query your favorite B2B data APIs through us. Same request, same price, no markup. |
+| [cohere](./cohere/SKILL.md) | Cohere chat, embeddings, and reranking (Command models) via the Cohere API. Read-only inference. |
+| [datacircle](./datacircle/SKILL.md) | Find the best GTM APIs. We benchmark all the GTM APIs and we put the results on our website. |
+| [datawright](./datawright/SKILL.md) | Domain, website and SEO checks (DNS, SSL, WHOIS, broken links, Core Web Vitals, screenshots) as clean JSON, pay-per-result on Apify. |
 | [deepgram](./deepgram/SKILL.md) | Transcribe prerecorded audio files to text (with optional diarization, summaries, topics, sentiment) and synthesize speech with Deepgram |
 | [deepl](./deepl/SKILL.md) | Translate text between 30+ languages, check usage. |
 | [deepseek](./deepseek/SKILL.md) | Chat with DeepSeek |
 | [descript](./descript/SKILL.md) | Work with Descript |
 | [devto](./devto/SKILL.md) | Read and write dev.to: own profile, own articles (published, drafts, all), public articles by username, create and update articles with a safe draft default. |
 | [digitalocean](./digitalocean/SKILL.md) | List your DigitalOcean droplets and domains. Read-only. |
-| [discord](./discord/SKILL.md) | Read servers and channels, send messages and DMs. |
+| [discord](./discord/SKILL.md) | Read servers and channels, catch up on mentions and activity, send messages and bot DMs. |
 | [docusign](./docusign/SKILL.md) | Draft and send signature envelopes (demo environment by default), check envelope status, and download signed documents. |
 | [dub](./dub/SKILL.md) | Create short links, read analytics, track conversions. |
 | [ecovacs](./ecovacs/SKILL.md) | Control Ecovacs DEEBOT robot vacuums through the official Ecovacs Open Platform: list bound robots, read robot state and battery, start/pause/resume/stop cleaning, send the robot back to its dock, and set the sweep/mop work mode. Use when the user mentions their DEEBOT or robot vacuum. |
@@ -79,11 +84,14 @@ Meta says many connector actions can be limited to read-only, important actions 
 | [framer](./framer/SKILL.md) | Verify a Framer project |
 | [front](./front/SKILL.md) | Read your Front shared inbox, and reply, assign teammates, and add tags on conversations (writes need --confirm). |
 | [fxmacrodata](./fxmacrodata/SKILL.md) | Macro indicator history, release calendars, and FX spot rates for 22 currencies. Read-only; USD works without a key. |
-| [gemini](./gemini/SKILL.md) | Google Gemini media generation: Nano Banana images, Imagen 4 images, Veo video, TTS, model listing. |
+| [gemini](./gemini/SKILL.md) | Google Gemini text generation (system instructions, tool use, Maps grounding) plus media generation — Nano Banana and Imagen 4 images, Veo 3.1 video with download, TTS — with cost confirmation enforced in code before any billed call. |
 | [getyoutubetranscript](./getyoutubetranscript/SKILL.md) | YouTube transcripts in any caption language, plus video search, channel and playlist listings. Read-only. |
 | [github](./github/SKILL.md) | View your profile, list repos, list open issues, and create issues. |
 | [gitlab](./gitlab/SKILL.md) | Your GitLab user, projects, open merge requests, and issue creation. |
+| [google-maps](./google-maps/SKILL.md) | Routes with traffic, travel times, and geocoding — with quota caps that keep it inside the free tier. |
 | [google-nest](./google-nest/SKILL.md) | Read traits and execute commands on Google Nest devices through the Smart Device Management (SDM) API: thermostats (mode, setpoints, ambient readings), cameras and doorbells (events, live-stream generation). Use it when the user asks about their Nest thermostat, wants to change heating/cooling, or wants camera/doorbell state. Thermostat commands start or stop real HVAC, so they are confirmation-gated (see Operating Rules). |
+| [google-pollen](./google-pollen/SKILL.md) | 5-day pollen forecast (tree, grass, weed + species detail) for any lat/lng. |
+| [groq](./groq/SKILL.md) | Groq chat completions on the OpenAI-compatible API — fast open-model inference (gpt-oss, Llama, Qwen) plus model listing. Read-only inference. |
 | [gumroad](./gumroad/SKILL.md) | View your Gumroad products and sales. Read-only by design. |
 | [heygen](./heygen/SKILL.md) | HeyGen avatar and talking-head video: prompt-to-video agent, multi-scene avatar video, status polling, avatar and voice lists. |
 | [html-docs](./html-docs/SKILL.md) | Search, read, create, edit, and review collaborative HTML Docs documents. |
@@ -94,6 +102,7 @@ Meta says many connector actions can be limited to read-only, important actions 
 | [huggingface](./huggingface/SKILL.md) | Verify your Hugging Face account and search the model hub. Read-only. |
 | [hume-ai](./hume-ai/SKILL.md) | Synthesize speech with Hume |
 | [ideogram](./ideogram/SKILL.md) | Ideogram text-to-image generation with the strongest text rendering in the catalog: generate, edit, remix, upscale, describe, balance. |
+| [keenable](./keenable/SKILL.md) | Web search with ranked sources and snippets, plus page fetch as markdown. Read-only; works without an API key. |
 | [kit](./kit/SKILL.md) | Read and write Kit (ConvertKit): list subscribers, broadcasts, sequences, tags; draft broadcasts. |
 | [kling](./kling/SKILL.md) | Kling AI video generation with client-side JWT auth: text-to-video, image-to-video, status polling, clip extend, lip-sync. |
 | [langfuse](./langfuse/SKILL.md) | Query traces and observations, manage prompts and scores. |
@@ -103,6 +112,7 @@ Meta says many connector actions can be limited to read-only, important actions 
 | [linear](./linear/SKILL.md) | View your assigned issues and create issues, over Linear |
 | [lob](./lob/SKILL.md) | Send physical mail through Lob |
 | [lodestone](./lodestone/SKILL.md) | One per-user key for Meta Ads, Instagram insights, GA4, email, Telegram, Typefully, and image/video generation (39 tools; anything that sends or spends needs --confirm). |
+| [looot](./looot/SKILL.md) | Search a catalog of 2,500+ data API endpoints (work emails, phones, company and people search, web pages, news), see the price, and run them from one prepaid balance. |
 | [loops](./loops/SKILL.md) | Manage email contacts, trigger loops, send transactional email. |
 | [luma](./luma/SKILL.md) | Luma Dream Machine video generation: text-to-video and image-to-video, status polling, cancel, image upload. |
 | [mastodon](./mastodon/SKILL.md) | Read and write Mastodon: verify the account, list own posts and followers, publish toots with native scheduling, upload media. |
@@ -119,8 +129,9 @@ Meta says many connector actions can be limited to read-only, important actions 
 | [newsapi](./newsapi/SKILL.md) | Top headlines and full-text news search. Read-only. |
 | [notion](./notion/SKILL.md) | Search and query Notion, plus create pages, append blocks, and update page properties (writes need --confirm). |
 | [octoprint](./octoprint/SKILL.md) | Control an OctoPrint 3D printer over its local REST API: read printer state and temperatures, monitor print progress, start/pause/cancel/restart jobs, upload and select gcode files, set hotend and bed temperatures, jog or home axes, and (gated) run raw G-code. Use when the user mentions their OctoPrint instance or a printer it drives. |
+| [onedrive](./onedrive/SKILL.md) | OneDrive via Microsoft Graph: list, search, download, upload, mkdir, rename, move, recycle — with confirm-before-write and the Personal Vault always off-limits. |
 | [openai](./openai/SKILL.md) | Check your OpenAI API access and list the models your key can use. Read-only. |
-| [openrouter](./openrouter/SKILL.md) | Browse the model catalog with per-token pricing; check your key usage. Read-only. |
+| [openrouter](./openrouter/SKILL.md) | OpenRouter chat completions plus the model catalog (names, prompt and completion pricing, free-model filter) and key usage/limit reporting. |
 | [openweathermap](./openweathermap/SKILL.md) | Current weather and 5-day forecast for any city. Read-only. |
 | [opusclip](./opusclip/SKILL.md) | Turn long-form videos into short, captioned, vertical clips with OpusClip |
 | [oura](./oura/SKILL.md) | Read Oura Ring health data: sleep scores, sleep sessions, readiness, workouts, and SpO2. |
@@ -130,6 +141,7 @@ Meta says many connector actions can be limited to read-only, important actions 
 | [pexels](./pexels/SKILL.md) | Search Pexels |
 | [philips-hue](./philips-hue/SKILL.md) | Control Philips Hue lights locally: list lights and rooms, set brightness/color, activate scenes, read sensors. |
 | [pipedrive](./pipedrive/SKILL.md) | List deals and contacts, create deals. CRM for your pipeline. |
+| [placecall](./placecall/SKILL.md) | Place real phone calls to US businesses (reservations, appointments, opening hours, quotes): gets through IVR menus and holds, relays mid-call questions, and returns the outcome and transcript. Every call needs exact-match confirmation; paid per outcome, with 250 free calls. |
 | [plain](./plain/SKILL.md) | Find customers, manage support threads. |
 | [playht](./playht/SKILL.md) | Generate spoken audio from text with PlayHT voices, browse stock and cloned voices, and create instant voice clones. Reach for this when the user wants narration or voiceovers, a voice library lookup, or a voice cloned from a sample. |
 | [podbean](./podbean/SKILL.md) | Manage podcast hosting on Podbean: list podcasts and their episodes, create, update, or delete episodes. Podbean |
@@ -143,7 +155,7 @@ Meta says many connector actions can be limited to read-only, important actions 
 | [railway](./railway/SKILL.md) | List projects and deployments, set variables, redeploy. |
 | [ramp](./ramp/SKILL.md) | Read-only view of corporate spend: transactions, cards and limits, users, departments. No spend actions by design. |
 | [readwise](./readwise/SKILL.md) | Search your highlights and books, save new highlights. |
-| [remove-bg](./remove-bg/SKILL.md) | Remove the background from an image with the remove.bg API: submit a local file or an image URL, get back a transparent PNG saved to a local path. Also check the account |
+| [remove-bg](./remove-bg/SKILL.md) | Remove the background from an image with remove.bg's model on Leonardo.Ai (the remove.bg API moved there on December 1, 2026): submit a local file or an image URL, get back a transparent PNG saved to a local path. |
 | [render](./render/SKILL.md) | List your Render services and recent deploys. Read-only. |
 | [replicate](./replicate/SKILL.md) | Run AI models, poll predictions. |
 | [resend](./resend/SKILL.md) | Send email through Resend and check delivery status. Every send is confirmed with you first. |
@@ -155,13 +167,14 @@ Meta says many connector actions can be limited to read-only, important actions 
 | [shopify](./shopify/SKILL.md) | View orders, products, customers; create products and discounts with confirmation. No order or customer writes, ever. |
 | [slack](./slack/SKILL.md) | Read channels, post messages, list users. The most-requested workplace connector. |
 | [smartcar](./smartcar/SKILL.md) | Read and control connected cars across many brands (Tesla, Ford, GM, Toyota, BMW, Hyundai and others) through one standardized API. Read odometer, location, charge and battery level, fuel level and tire pressure; lock/unlock doors; start/stop charging; set charge limits and schedules; route the built-in navigation. Use when the user mentions their car and the brand has no dedicated connector here, or asks for cross-brand vehicle telemetry and control. |
-| [smartthings](./smartthings/SKILL.md) | Read device status and issue capability commands across a Samsung SmartThings account: locations, devices, switches, dimmers, locks, thermostats, sirens, garage door controllers, and window shades. Use it when the user asks about or wants to change the state of anything paired to their SmartThings hub or cloud account. This connector drives real physical hardware, so every write is confirmation-gated (see Operating Rules). |
+| [smartthings](./smartthings/SKILL.md) | Read status and drive Samsung SmartThings: locations, rooms, devices, modes, scenes, health, history, virtual switches, MQTT discovery. Confirmation-gated actuation, hardened in code (exact-effect confirm for locks/doors; bound, expiring confirmations for medium-risk writes). |
 | [spotify](./spotify/SKILL.md) | Read your profile, playlists, top tracks and artists, and search the catalog. Playlist and library writes need your confirmation. |
 | [square](./square/SKILL.md) | Work with a Square seller account: list locations and payments, create orders, push a checkout to a physical Square Terminal for in-person payment, charge a payment source directly, cancel a pending Terminal checkout, and refund a payment. Reach for this when the user needs to take or return money through Square. |
 | [stripe](./stripe/SKILL.md) | Read-only Stripe visibility: balance, recent charges, customers. No write commands ship: expanding to writes is a deliberate v2. |
 | [supabase](./supabase/SKILL.md) | List tables, query rows, and insert/update/delete rows in your Supabase Postgres database. |
 | [supermemory](./supermemory/SKILL.md) | Store and recall with Supermemory: add memories and documents, hybrid search, upload files, tune settings. |
 | [switchbot](./switchbot/SKILL.md) | Read status and send commands to SwitchBot devices over the official OpenAPI v1.1: SwitchBot Bot (physical button presser), SwitchBot Lock, Curtain and Blind Tilt motors, plugs, lights, air conditioners, infrared remotes, and saved scenes. Use it when the user asks about or wants to change anything in their SwitchBot setup. Commands drive real physical hardware, so writes are confirmation-gated (see Operating Rules). |
+| [taasky](./taasky/SKILL.md) | Negotiate meeting times, prices and dates with another person or their agent: open or join a room, counter within private limits, check back. Accept, reject and withdraw are confirmed by the user in Telegram. |
 | [tally](./tally/SKILL.md) | List forms, read submissions, manage form blocks. |
 | [tavily](./tavily/SKILL.md) | Fast, clean web research: one call returns an AI answer plus ranked sources with snippets. Read-only. |
 | [telegram](./telegram/SKILL.md) | Send messages and read updates through your own Telegram bot. Bots can |
@@ -186,10 +199,11 @@ Meta says many connector actions can be limited to read-only, important actions 
 | [wise](./wise/SKILL.md) | View Wise profiles and multi-currency balances. Read-only by design. |
 | [x](./x/SKILL.md) | Post, search, like, DM. Note: no usable free read tier. |
 | [xai](./xai/SKILL.md) | Query Grok chat completions and list available Grok models through xAI |
-| [ynab](./ynab/SKILL.md) | Read and write YNAB budgets: list budgets, accounts, balances, transactions, and categories; record transactions. |
+| [ynab](./ynab/SKILL.md) | Read YNAB budgets in dollars — plans, accounts, categories with goal targets, month funding and activity, transactions with filters — plus the guarded-write pattern (dry-run, snapshot, verify, audit log) for any change. |
 | [youtube](./youtube/SKILL.md) | Read channels and videos, search, plus uploads and comments with confirmation. |
 | [zep](./zep/SKILL.md) | Work with Zep |
 
 ## Submit a connector
 
 Open a pull request adding one self-contained folder with `SKILL.md` and only the files listed in its `## Files` manifest. Include a public source for the API, accurately state auth scopes and allowed hosts, require approval for consequential writes, and mark the connector `Draft` until live-tested. Never commit credentials. See [CONTRIBUTING.md](../CONTRIBUTING.md) for the review checklist.
+
