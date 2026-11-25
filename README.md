@@ -42,6 +42,17 @@ This repository focuses on API onboarding and integration rather than maintainin
 | Image input | Available only on the models marked “Text + image” in the [catalog](docs/MODEL-CATALOG.md) |
 | Pricing | Token-metered; see the dated [rate snapshot](docs/MODEL-CATALOG.md) and verify live rates before use |
 
+## More model families on Muapi
+
+The 21 direct routes documented here cover Muapi's abliterated, obliterated, and derestricted models. Muapi's broader chat catalog also includes Claude, GPT, Gemini, Grok, DeepSeek, GLM, Qwen, and Kimi models, with uncensored or abliterated variants where available. Model IDs and availability can change, so check the live model lists before choosing an endpoint:
+
+| Compatibility API | Live model list |
+|---|---|
+| OpenAI Responses-compatible | `GET https://api.muapi.ai/openai/v1/models` |
+| Anthropic Messages-compatible | `GET https://api.muapi.ai/anthropic/v1/models` |
+
+Authenticate with your Muapi API key using `Authorization: Bearer $MUAPI_API_KEY` or `x-api-key`. The examples in this repository continue to focus on the 21 abliterated model-specific routes below.
+
 ## Quickstart
 
 After creating a Muapi API key, set it in your shell:
