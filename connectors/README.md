@@ -58,6 +58,7 @@ Meta says many connector actions can be limited to read-only, important actions 
 | [coda](./coda/SKILL.md) | List docs, read tables and rows, add rows. Your docs as a database. |
 | [cohere](./cohere/SKILL.md) | Cohere chat, embeddings, and reranking (Command models) via the Cohere API. Read-only inference. |
 | [datacircle](./datacircle/SKILL.md) | Datacircle is a data co-op. Query your favorite B2B data APIs through us. Same request, same price, no markup. |
+| [datawright](./datawright/SKILL.md) | Domain, website and SEO checks (DNS, SSL, WHOIS, broken links, Core Web Vitals, screenshots) as clean JSON, pay-per-result on Apify. |
 | [deepgram](./deepgram/SKILL.md) | Transcribe prerecorded audio files to text (with optional diarization, summaries, topics, sentiment) and synthesize speech with Deepgram |
 | [deepl](./deepl/SKILL.md) | Translate text between 30+ languages, check usage. |
 | [deepseek](./deepseek/SKILL.md) | Chat with DeepSeek |
